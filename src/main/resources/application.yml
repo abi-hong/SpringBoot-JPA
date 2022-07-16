@@ -1,7 +1,8 @@
 spring: #띄어쓰기 없음
   datasource: #띄어쓰기 2칸
-    url: jdbc:h2:~/jpashop #4칸
+    url: jdbc:h2:tcp://localhost/~/jpsshop #4칸
     #jdbc:h2:tcp://localhost/~/jpashop
+    #jdbc:h2:~/jpashop
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -16,4 +17,4 @@ spring: #띄어쓰기 없음
 
 logging.level: #띄어쓰기 없음
   org.hibernate.SQL: debug #띄어쓰기 2칸
-# org.hibernate.type: trace #띄어쓰기 2칸
+  org.hibernate.type: trace #띄어쓰기 2칸
