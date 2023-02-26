@@ -19,10 +19,4 @@ public class Member {
 
     private String name;
 
-    @Embedded
-    private Address address;
-
-    @OneToMany(mappedBy = "member") //읽기 전용
-    private List<Order> orders = new ArrayList<>();
-
 }

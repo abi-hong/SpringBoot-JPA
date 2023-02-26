@@ -1,13 +1,12 @@
 spring: #띄어쓰기 없음
   datasource: #띄어쓰기 2칸
-    url: jdbc:h2:tcp://localhost/~/jpsshop #4칸
-    #jdbc:h2:tcp://localhost/~/jpashop
-    #jdbc:h2:~/jpashop
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    url: jdbc:mariadb://localhost:3306/shopjpa
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: user
+    password: password
 
   jpa: #띄어쓰기 2칸
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate: #띄어쓰기 4칸
       ddl-auto: create #띄어쓰기 6칸
     properties: #띄어쓰기 4칸
