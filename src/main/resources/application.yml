@@ -1,9 +1,9 @@
 spring: #띄어쓰기 없음
   datasource: #띄어쓰기 2칸
-    url: jdbc:mariadb://localhost:3306/shopjpa
+    url: jdbc:mariadb://localhost:3306/shop
     driver-class-name: org.mariadb.jdbc.Driver
-    username: user
-    password: password
+    username: user1
+    password: 1111
 
   jpa: #띄어쓰기 2칸
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
